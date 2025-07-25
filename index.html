@@ -1,0 +1,274 @@
+<!-- 
+  IMPORTANT: This file should be named 'index.html' and placed in the root
+  of your 'projectwebpge' folder, NOT inside the 'assets' folder.
+-->
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KALLURU PAVAN KUMAR REDDY - Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .glass-effect {
+            background: rgba(255, 255, 255, 0.7);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+        }
+        #header.scrolled {
+            background-color: rgba(255, 255, 255, 0.85);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+        }
+        /* Style for the typewriter cursor */
+        .typewriter h1 .cursor {
+            display: inline-block;
+            background-color: #333;
+            margin-left: 0.1rem;
+            width: 3px;
+            animation: blink 1s infinite;
+        }
+        @keyframes blink {
+            0% { background-color: #333; }
+            49% { background-color: #333; }
+            50% { background-color: transparent; }
+            99% { background-color: transparent; }
+            100% { background-color: #333; }
+        }
+    </style>
+</head>
+<body class="bg-white text-gray-800">
+
+    <!-- Header -->
+    <header class="fixed top-0 left-0 right-0 z-50 transition-all duration-300" id="header">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#" class="text-xl md:text-2xl font-bold text-cyan-600">K. PAVAN KUMAR REDDY</a>
+            <div class="hidden md:flex space-x-8 items-center">
+                <a href="#home" class="text-gray-600 hover:text-cyan-600 transition-colors duration-300">Home</a>
+                <a href="#about" class="text-gray-600 hover:text-cyan-600 transition-colors duration-300">About</a>
+                <a href="#projects" class="text-gray-600 hover:text-cyan-600 transition-colors duration-300">Projects</a>
+                <a href="#resume" class="text-gray-600 hover:text-cyan-600 transition-colors duration-300">Resume</a>
+                <a href="#contact" class="bg-cyan-500 hover:bg-cyan-600 text-white font-bold py-2 px-4 rounded-lg transition-transform duration-300 transform hover:scale-105">Contact</a>
+            </div>
+            <button id="mobile-menu-button" class="md:hidden text-gray-800 focus:outline-none">
+                <i data-lucide="menu"></i>
+            </button>
+        </nav>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white shadow-lg">
+            <a href="#home" class="block py-2 px-4 text-sm text-gray-600 hover:bg-gray-100">Home</a>
+            <a href="#about" class="block py-2 px-4 text-sm text-gray-600 hover:bg-gray-100">About</a>
+            <a href="#projects" class="block py-2 px-4 text-sm text-gray-600 hover:bg-gray-100">Projects</a>
+            <a href="#resume" class="block py-2 px-4 text-sm text-gray-600 hover:bg-gray-100">Resume</a>
+            <a href="#contact" class="block py-2 px-4 text-sm text-gray-600 hover:bg-gray-100">Contact</a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="min-h-screen flex items-center bg-cover bg-center" style="background-image: url('https://placehold.co/1920x1080/e0e7ff/4f46e5?text=Welcome');">
+        <div class="container mx-auto px-6 text-center">
+            <div class="glass-effect p-8 md:p-12 rounded-2xl inline-block">
+                <h1 class="text-4xl md:text-6xl font-bold text-gray-900 mb-4">Java Full Stack Developer</h1>
+                <p class="text-lg md:text-xl text-gray-700 max-w-2xl mx-auto">I build and deploy scalable web applications using Java, Spring Boot, and Angular/React.</p>
+                <a href="#projects" class="mt-8 inline-block bg-cyan-500 hover:bg-cyan-600 text-white font-bold py-3 px-8 rounded-lg text-lg transition-transform duration-300 transform hover:scale-105">View My Work</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center mb-12 text-cyan-600">About Me</h2>
+            <div class="flex flex-col md:flex-row items-center gap-12">
+                <div class="md:w-1/3">
+                    <!-- CORRECT IMAGE PATH: 'assets/pavan-reddy.jpg' -->
+                    <img src="assets/pavan-reddy.jpg.jpg" alt="KALLURU PAVAN KUMAR REDDY" class="rounded-full mx-auto shadow-lg w-64 h-64 md:w-80 md:h-80 object-cover border-4 border-cyan-500">
+                </div>
+                <div class="md:w-2/3">
+                    <p class="text-gray-600 mb-4 leading-relaxed">
+                        Hello! I'm KALLURU PAVAN KUMAR REDDY, a dedicated Java Full Stack Developer proficient in building and deploying scalable web applications.
+                    </p>
+                    <p class="text-gray-600 mb-4 leading-relaxed">
+                        I am passionate about writing clean, efficient code and collaborating with teams to deliver high-quality software. I'm seeking to leverage my technical skills to contribute to a reputable and innovative organization.
+                    </p>
+                     <p class="text-gray-600 leading-relaxed">
+                        I have completed training at Jspiders Institute, where I gained hands-on experience in core Java, including logic building.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center mb-12 text-cyan-600">My Projects</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-white rounded-lg overflow-hidden shadow-lg border border-gray-200 transform hover:-translate-y-2 transition-transform duration-300">
+                    <img src="assets/pt-poster1.jpg.jpg" alt="Project 1" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">SMART GLOVES FOR DUMB PEOPLE</h3>
+                        <p class="text-gray-600 mb-4">A wearable glove that translates sign language gestures into audible speech and text in real-time.</p>
+                        <a href="assets/manvitha final last (2).pdf" class="text-cyan-600 hover:text-cyan-700 font-semibold">View Presentation <i data-lucide="arrow-right" class="inline-block w-4 h-4"></i></a>
+                    </div>
+                </div>
+                <div class="bg-white rounded-lg overflow-hidden shadow-lg border border-gray-200 transform hover:-translate-y-2 transition-transform duration-300">
+                    <img src="assets/pt-poster.jpg.jpg" alt="Project 2" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Portfolio Web page</h3>
+                        <p class="text-gray-600 mb-4">Designed a customizable resume and portfolio site highlighting skills and projects.</p>
+                        <a href="#" class="text-cyan-600 hover:text-cyan-700 font-semibold">View Presentation <i data-lucide="arrow-right" class="inline-block w-4 h-4"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Resume Section -->
+    <section id="resume" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-3xl font-bold mb-8 text-cyan-600">My Resume</h2>
+            <p class="text-gray-600 max-w-2xl mx-auto mb-8">
+                Here you can find a summary of my skills, experience, and education. Feel free to download a copy for your reference.
+            </p>
+            <!-- CORRECT RESUME PATH: 'assets/your-resume-file.pdf' -->
+            <a href="assets/KALLURU-PAVAN-KUMAR-REDDY-FlowCV-Resume-20250725 (4).pdf" download class="bg-cyan-500 hover:bg-cyan-600 text-white font-bold py-3 px-8 rounded-lg text-lg transition-transform duration-300 transform hover:scale-105 inline-flex items-center">
+                <i data-lucide="download" class="mr-2"></i> Resume
+            </a>
+            <div class="mt-12 bg-white p-8 rounded-lg text-left max-w-4xl mx-auto shadow-lg border border-gray-200">
+                <h3 class="text-2xl font-bold mb-6 text-cyan-600">Resume Preview</h3>
+                
+                <div class="grid md:grid-cols-2 gap-8">
+                    <!-- Skills -->
+                    <div>
+                        <h4 class="text-xl font-semibold text-gray-800 mb-4">Key Skills</h4>
+                        <ul class="list-disc list-inside text-gray-600 space-y-2">
+                            <li>Java</li>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>JavaScript</li>
+                            <li>GitHub</li>
+                        </ul>
+                    </div>
+                    <!-- Education -->
+                    <div>
+                        <h4 class="text-xl font-semibold text-gray-800 mb-4">Education</h4>
+                        <div class="space-y-4">
+                            <div>
+                                <p class="font-semibold">B.Tech (2020-2025)</p>
+                                <p class="text-gray-600">Sri Venkateswara College of Engineering</p>
+                                <p class="text-sm text-gray-500">Graduated with 65%</p>
+                            </div>
+                             <div>
+                                <p class="font-semibold">Higher Secondary Education (2018-2020)</p>
+                                <p class="text-gray-600">Narayana Junior College</p>
+                                <p class="text-sm text-gray-500">7.0 CGPA</p>
+                            </div>
+                             <div>
+                                <p class="font-semibold">SSC (2018)</p>
+                                <p class="text-gray-600">Bhashyam High School</p>
+                                <p class="text-sm text-gray-500">9.3 CGPA</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-white">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-3xl font-bold mb-4 text-cyan-600">Get In Touch</h2>
+            <p class="text-gray-600 max-w-xl mx-auto mb-8">I'm currently open to new opportunities. If you have a project in mind or just want to say hi, feel free to reach out.</p>
+            <a href="mailto:Reddypavn29@gmail.com" class="text-2xl text-cyan-600 hover:text-cyan-700 font-semibold">Reddypavn29@gmail.com</a>
+            <p class="text-lg text-gray-700 mt-4">Mobile: <a href="tel:8074940397" class="text-cyan-600 hover:text-cyan-700 font-semibold">8074940397</a></p>
+            <div class="flex justify-center space-x-6 mt-8">
+                <a href="https://github.com" target="_blank" class="text-gray-500 hover:text-cyan-600 transition-colors duration-300"><i data-lucide="github" class="w-8 h-8"></i></a>
+                <a href="https://linkedin.com/in/pavan-kumar-reddy-2ab14621a" target="_blank" class="text-gray-500 hover:text-cyan-600 transition-colors duration-300"><i data-lucide="linkedin" class="w-8 h-8"></i></a>
+                <a href="https://twitter.com" target="_blank" class="text-gray-500 hover:text-cyan-600 transition-colors duration-300"><i data-lucide="twitter" class="w-8 h-8"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-100 py-6">
+        <div class="container mx-auto px-6 text-center text-gray-600">
+            <p>&copy; 2024 KALLURU PAVAN KUMAR REDDY. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // This script runs after the entire HTML document has been loaded.
+        document.addEventListener('DOMContentLoaded', () => {
+            // Initialize Lucide Icons
+            try {
+                lucide.createIcons();
+            } catch (e) {
+                console.error("Lucide icons could not be created.", e);
+            }
+
+            // --- Mobile Menu Toggle Functionality ---
+            const mobileMenuButton = document.getElementById('mobile-menu-button');
+            const mobileMenu = document.getElementById('mobile-menu');
+
+            // This ensures the code doesn't break if the elements are not found.
+            if (mobileMenuButton && mobileMenu) {
+                // Listen for a click on the menu button.
+                mobileMenuButton.addEventListener('click', () => {
+                    // Toggle the 'hidden' class to show/hide the menu.
+                    mobileMenu.classList.toggle('hidden');
+                });
+
+                // --- Close mobile menu on link click ---
+                // This ensures that when a user clicks a link in the mobile menu, the menu closes.
+                document.querySelectorAll('#mobile-menu a').forEach(link => {
+                    link.addEventListener('click', () => {
+                        mobileMenu.classList.add('hidden');
+                    });
+                });
+            }
+            
+            // --- Header Background Change on Scroll ---
+            const header = document.getElementById('header');
+            if (header) {
+                // Listen for scroll events on the window.
+                window.addEventListener('scroll', () => {
+                    // The second argument of toggle is a boolean. If true, the class is added. If false, it's removed.
+                    // This adds the 'scrolled' class when the user scrolls more than 50 pixels down.
+                    header.classList.toggle('scrolled', window.scrollY > 50);
+                });
+            }
+
+            // --- Typewriter Effect for Hero Title ---
+            const titleElement = document.getElementById('hero-title');
+            const titleText = "Java Full Stack Developer";
+            
+            if (titleElement && titleText) {
+                let i = 0;
+                function typeWriter() {
+                    if (i < titleText.length) {
+                        // Set the text to the substring and add the blinking cursor.
+                        titleElement.innerHTML = titleText.substring(0, i + 1) + '<span class="cursor"></span>';
+                        i++;
+                        // Call this function again after a short delay.
+                        setTimeout(typeWriter, 100); // Adjust typing speed here (in milliseconds)
+                    } else {
+                        // When typing is done, ensure the full text and cursor are displayed.
+                        titleElement.innerHTML = titleText + '<span class="cursor"></span>';
+                    }
+                }
+                // Start the typewriter effect.
+                typeWriter();
+            }
+        });
+    </script>
+</body>
+</html>
